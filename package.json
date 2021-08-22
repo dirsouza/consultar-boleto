@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node dist",
     "build": "rimraf dist && tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "module-alias": "^2.2.2",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
+    "@types/module-alias": "^2.0.1",
     "@types/node": "^16.7.1",
     "typescript": "^4.3.5"
   },
