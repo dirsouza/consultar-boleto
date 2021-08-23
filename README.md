@@ -34,6 +34,16 @@
 ### Acessando o projeto:
 > Conforme já descrito no passo anterior, o projeto estará executando em [http://localhost:8080](http://localhost:8080).
 
-Esse projeto contém uma única rota [http://localhost:8080/boleto/:codigo](http://localhost:8080/boleto/:codigo) e essa rota só aceita a linha digitável do boleto no lugar do `:codigo`
+Esse projeto contém uma única rota do tipo GET [http://localhost:8080/boleto/:codigo](http://localhost:8080/boleto/:codigo) e essa rota só aceita a linha digitável do boleto no lugar do `:codigo`
 
-#### Exemplo: [http://localhost:8080/boleto/21290001192110001210904475617405975870000002000](http://localhost:8080/boleto/21290001192110001210904475617405975870000002000)
+#### Exemplo de requisição: [http://localhost:8080/boleto/21290001192110001210904475617405975870000002000](http://localhost:8080/boleto/21290001192110001210904475617405975870000002000)
+
+#### Exemplo de retorno com sucesso:
+```json
+// status 200
+{
+  "barCode": "21299758700000020000001121100012100447561740",
+  "amount": "20.00",
+  "expirationDate": "2018-07-17"
+}
+```
